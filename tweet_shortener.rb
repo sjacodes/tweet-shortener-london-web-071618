@@ -18,8 +18,8 @@ end
 
 def word_substituter(tweet)
   individual_words = tweet.split(" ")
-    dictionary.each do |word, substitute|
-      
+  dictionary.each do |word, substitute|
+    tweet.each do |wor
   
   # Question 1
   describe '#word_substituter' do
