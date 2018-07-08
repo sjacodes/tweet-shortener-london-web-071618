@@ -19,7 +19,7 @@ end
 def word_substituter(tweet)
   individual_words = tweet.split(" ")
   dictionary.each do |initial_word, substitute|
-    individual_words.map do |word|
+    individual_words = tweet.map do |word|
       if word.downcase == initial_word
         word = substitute
       else
@@ -30,18 +30,6 @@ def word_substituter(tweet)
   return individual_words.join(" ")
 end
 
-  dictionary.each do |orig_word, sub_word|
-    tweet = tweet.map do |word|
-      if word.downcase === orig_word
-        word = sub_word
-      else word = word
-      end
-    end
-  end
-  return tweet.join(" ")
-end
-        
-      
   
   # Question 1
   describe '#word_substituter' do
