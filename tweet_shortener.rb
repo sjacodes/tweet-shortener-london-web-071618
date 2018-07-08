@@ -17,15 +17,15 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  tweet = tweet.split(" ")
+  separated_tweet = tweet.split(" ")
   dictionary.each do |init_word, sub_word|
-    tweet = tweet.map do |word|
-      if word.downcase === orig_word
+    separated_tweet = tweet.map do |word|
+      if word.downcase === init_word
         word = sub_word
       else word = word
       end
     end
   end
-  return tweet.join(" ")
+  return separated_tweet.join(" ")
 end
         
