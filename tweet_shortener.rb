@@ -40,4 +40,6 @@ end
   
 def selective_tweet_shortener(tweet)
   if tweet.length > 140
-    puts bull
+    puts word_substituter(tweet)
+  else
+    
