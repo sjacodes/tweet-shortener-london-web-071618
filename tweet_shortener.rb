@@ -23,7 +23,8 @@ def word_substituter(tweet)
       if word.downcase == initial_word
         word = substitute
       else
-        
+        word = word
+      
         
       
   
