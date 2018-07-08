@@ -19,7 +19,7 @@ end
 def word_substituter(tweet)
   individual_words = tweet.split(" ")
   dictionary.each do |initial_word, substitute|
-    individual_words = tweet.map do |word|
+    individual_words = tweet.collect do |word|
       if word.downcase == initial_word
         word = substitute
       else
