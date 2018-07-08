@@ -21,6 +21,7 @@ def word_substituter(tweet)
   dictionary.each do |initial_word, substitute|
     individual_words.map do |word|
       if word.downcase == initial_word
+        word = substitute
         
       
   
