@@ -20,7 +20,7 @@ def word_substituter(tweet)
   individual_words = tweet.split(" ")
   dictionary.each do |initial_word, substitute|
     individual_words.map do |word|
-      
+      if word.downcaxse
       
   
   # Question 1
